@@ -35,11 +35,7 @@ for (let j of myArray2){
     console.log("For of loop: ",j)
 }
 
-
-
-/*
 // For in
-
 const salaries= {
     Jack : 24000,
     Paul : 34000,
@@ -48,11 +44,11 @@ const salaries= {
 
 // using for...in
 for ( let i in salaries) {
-
+    
     // add a currency symbol
     let salary = "$" + salaries[i];
-
+    
     // display the values
-    console.log("Salary: ",salary);
+    console.log("for in.. Salary: ",salary);
 }
-*/
+
