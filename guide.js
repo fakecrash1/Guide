@@ -9,6 +9,7 @@ console.log("myArray2: ",myArray2);
 
 // While loop 
 console.log("\n")
+
 let i = 0;
 while (i < myArray){
     console.log("While loop (myArray): ",i)
@@ -17,6 +18,7 @@ while (i < myArray){
 
 // Do while loop
 console.log("\n")
+
 let count = 0;
 do {
     console.log("Do... (count<5): ", count);
@@ -27,24 +29,28 @@ do {
 
 // For loop < 10
 console.log("\n")
+
 for (let j = 0; j < 10; j++){
     console.log("For loop (j<10): ",j)
 }
 
 // For loop +3 < 15
 console.log("\n")
+
 for (let j = 0; j < 15; j+=3){
     console.log("For loop ([i+=3]<15): ",j)
 }
 
 // For of loop
 console.log("\n")
+
 for (let j of myArray2){
     console.log("For of loop (myArray2): ",j)
 }
 
 // For in
 console.log("\n")
+
 const salaries = {
     Jack : 24000,
     Paul : 34000,
@@ -53,6 +59,7 @@ const salaries = {
 
 // using for...in
 console.log("Salaries (for in...): ", salaries)
+
 for ( let i in salaries) {
     // add a currency symbol
     let salary = salaries[i] + "$";
@@ -62,6 +69,7 @@ for ( let i in salaries) {
 
 // Functions - [ https://www.youtube.com/watch?v=lWldunWaLPs&list=PLxkN9e3dfloGjlGqz4Pl-TtIXLi7lOf3F ]
 console.log("\n")
+
 function timesTwo(num) {
     return 2 * num;
 }
@@ -77,6 +85,7 @@ console.log("manyTimes function: (1)[(4*i)*3]", manyTimes(1), "\nmanyTimes funct
 
 // Reverse an Array
 console.log("\n")
+
 function reverseArray(array) {
     let newArray = [];
     for (let i = array.length -1; i >= 0; i--) {
@@ -90,9 +99,10 @@ console.log("Reversed array (1,2,3..5): ", reversedArray, "\nReversed Array (1,2
 
 // Multiplying two arrays
 console.log("\n")
+
 function multipyAll(array1, array2) {
     if (array1.length !== array2.length) return undefined;
-// every item in array 1 * every item in array 2
+    //every item in array 1 * every item in array 2
     let total = 0;
     for (let i = 0; i < array1.length; i++) {
         for (let j = 0; j < array2.length; j++) {
@@ -105,17 +115,88 @@ let result3 = multipyAll([1, 2], [5, 6]);
 let result4 = multipyAll([1, 2, 3, 4], [5, 3, 1, 8]);
 console.log("Result3 : [1, 2],[5, 6]", result3, "\nResult4 [1, 2, 3, 4],[5, 3, 1, 8]: ", result4);
 
+
 // Built in methods
 console.log("\n")
+
 let arr =  [1, 2, 3, 4];
+
 // Adding and removing to the end of array
-console.log("\n")
 arr.push(5); console.log("arr = [1, 2, 3, 4]\narr.push(5): ", arr);
 arr.pop(); console.log("arr.pop()", arr);
+
 // Adding and removing to front of array
-console.log("\n")
 arr.unshift(0); console.log("arr.unshift(0): ", arr);
 arr.shift(); console.log("arr.shift(): ", arr);
+
+
+// Array Methods - [ https://www.youtube.com/watch?v=R8rmfD9Y5-c ]
+console.log("\n")
+
+const items = [
+    {name: 'Bike',      price: 100  },
+    {name: 'TV',        price: 200  },
+    {name: 'Album',     price: 10   },
+    {name: 'Book',      price: 5    },
+    {name: 'Computer',  price: 500  },
+    {name: 'Computer',  price: 1000 },
+    {name: 'Keyboard',  price: 25   }
+];
+
+//filter
+console.log("\n");
+
+const filteredItems = items.filter((items) => {
+    return items.price <= 100
+});
+console.log("items: ", items);
+console.log("filteredItems: .filter(price<=100)", filteredItems);
+
+//map
+console.log("\n");
+
+const itemNames = items.map((items) => {
+    return items.name
+});
+console.log("itemNames: (.map)", itemNames);
+
+const itemPrices = items.map((items) => {
+    return items.price
+});
+console.log("itemPrices: (.map)", itemPrices);
+
+//find method
+console.log("\n");
+
+const foundItem = items.find((items) => {
+    return items.name === 'Book'
+});
+console.log("foundItem: (.find)", foundItem);
+
+const foundItem2 = items.find((items) => {
+return items.name === 'Album'
+});
+console.log("foundItem2: (.find)", foundItem2)
+
+//forEach method
+console.log("\n");
+
+items.forEach((item) => {
+    console.log("forEach (item.name):", item.name)
+});
+items.forEach((item) => {
+    console.log("forEach (item.price):", item.price)
+});
+
+//reduce method
+console.log("\n");
+
+const totalPrice = items.reduce((total, item) => {
+    return total + item.price
+    }, 0);
+
+console.log("totalPrice: (.reduce)", totalPrice);
+
 
 
 
