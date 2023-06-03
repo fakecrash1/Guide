@@ -20,9 +20,6 @@ do {
     }while (count < 5);
         console.log("while...", count);
 
-
-
-
 // For loop < 10
 for (let j = 0; j < 10; j++){
     console.log("For loop: ",j)
@@ -33,15 +30,10 @@ for (let j = 0; j < 15; j+=3){
     console.log("For loop (step by 3 [i+=3]): ",j)
 }
 
-
 // For of loop
 for (let j of myArray2){
     console.log("For of loop: ",j)
 }
-
-
-
-
 
 
 
