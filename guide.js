@@ -52,3 +52,5 @@ for ( let i in salaries) {
     console.log("for in.. Salary: ",salary);
 }
 
+// mit találtál
+// code ami példázza mit találtál
