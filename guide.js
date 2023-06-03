@@ -34,6 +34,12 @@ for (let j = 0; j < 15; j+=3){
 }
 
 
+// For of loop
+for (let j of myArray2){
+    j+=3
+    console.log("For of loop ([j+=3]): ",j)
+}
+
 
 
 
