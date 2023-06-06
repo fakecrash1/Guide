@@ -1,0 +1,23 @@
+1. **Változók létrehozása:** A `guide.js` fájlban található kód első részében változók létrehozását látjuk. Az `myArray` és az `myArray2` változók például a `let` és a `const` kulcsszavak segítségével kerülnek definiálásra. Az `myArray` változó értéke később változtatható, míg a `const`-ként definiált `myArray2` változó értéke nem változtatható meg.
+
+2. **While ciklus:** A `while` ciklus egy ismétlődő szerkezet, amely addig fut, amíg a feltétel igaz. Ebben a részben a `while` ciklusban lévő kód addig fut, amíg az `i` változó kisebb, mint az `myArray`.
+
+3. **Do...While ciklus:** A `do...while` ciklus hasonló a `while` ciklushoz, de a ciklus legalább egyszer lefut, mielőtt ellenőrizné a feltételt. Ebben a példában a ciklus addig fut, amíg a `count` változó kisebb, mint 5.
+
+4. **For ciklus:** A `for` ciklus lehetővé teszi a kód többszöri lefuttatását. Ebben a példában a ciklus addig fut, amíg a `j` változó kisebb, mint 10. A második példában a `j` változó minden iterációban 3-mal növekszik, és a ciklus addig fut, amíg `j` kisebb, mint 15.
+
+5. **For...of ciklus:** A `for...of` ciklus lehetővé teszi a tömb elemeinek bejárását. Ebben a példában a `myArray2` tömb minden elemét kiírja a kód.
+
+6. **For...in ciklus:** A `for...in` ciklus lehetővé teszi az objektumok elemeinek bejárását. Ebben a példában a `salaries` objektum minden kulcs-érték párját kiírja a kód.
+
+7. **Függvények:** Ebben a részben két függvényt, a `timesTwo` és a `manyTimes` függvényt láthatjuk. Ezek a függvények paraméterként fogadnak egy számot, és visszaadnak egy értéket, amelyet aztán kiírhatunk.
+
+8. **Tömbök megfordítása:** Ebben a részben a `reverseArray` függvény segítségével megfordítjuk a tömb elemeit, és visszaadjuk az új tömböt.
+
+9. **Tömbök szorzása:** A `multipyAll` függvény
+
+két tömböt fogad paraméterként, és ha a két tömb elemeinek száma megegyezik, akkor minden elemet az első tömbből megszoroz minden elemmel a második tömbből, és visszaadja a szorzatok összegét.
+
+10. **Beépített metódusok:** A JavaScript néhány beépített metódusát is láthatjuk működés közben, mint például a `push()`, `pop()`, `unshift()`, `shift()`, amiket tömbökkel lehet használni. A `push()` és `pop()` metódusok a tömb végén adnak hozzá, illetve távolítanak el elemeket, míg az `unshift()` és `shift()` metódusok a tömb elején adnak hozzá, illetve távolítanak el elemeket.
+
+11. **Tömb metódusok:** Végül bemutatásra kerülnek a JavaScript tömb metódusai, mint a `filter()`, `map()`, `find()`, `forEach()`, és `reduce()`. A `filter()` metódus egy új tömböt hoz létre, amelyben csak azok az elemek szerepelnek, amik megfelelnek a feltételnek. A `map()` metódus egy új tömböt hoz létre, amelyben a tömb minden elemére alkalmazva van egy függvény. A `find()` metódus visszaadja a tömb első elemét, ami megfelel a feltételnek. A `forEach()` metódus lefuttat egy függvényt a tömb minden elemére. A `reduce()` metódus végül összeadja a tömb összes elemét, és visszaadja az összeget.
